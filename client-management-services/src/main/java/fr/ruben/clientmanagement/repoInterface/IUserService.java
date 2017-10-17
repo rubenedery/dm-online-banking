@@ -16,7 +16,7 @@ public interface IUserService {
 
     public String updateUser(int numUser);
 
-    public String getOneUser(int numUser);
+    public String getOneUser(String name);
 
     public String deleteUser(int numUser);
 }

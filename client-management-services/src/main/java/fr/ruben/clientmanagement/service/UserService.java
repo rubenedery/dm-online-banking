@@ -52,8 +52,8 @@ public class UserService implements IUserService {
         return "update";
     }
 
-    public String getOneUser(int numUser) {
-        return "user";
+    public String getOneUser(String name) {
+        return name;
     }
 
     public String deleteUser(int numUser) {
