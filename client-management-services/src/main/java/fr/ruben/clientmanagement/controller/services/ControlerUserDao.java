@@ -1,5 +1,6 @@
 package fr.ruben.clientmanagement.controller.services;
 
+import fr.ruben.clientmanagement.users.models.UserDto;
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,12 +23,28 @@ public class ControlerUserDao {
 
     private static Logger logger = Logger.getLogger(ControlerUserDao.class);
 
-
-    public List<String> getMockUsers() {
-        List<String> userDtos = new ArrayList<String>();
-        userDtos.add("Ruben");
-        return userDtos;
+    @RequestMapping(value = "/client", method = RequestMethod.GET)
+    public List<UserDto> getMockUsers() {
+        List<UserDto> userDtos = new ArrayList<>();
+        return getMock();
     }
 
+
+    public List<UserDto> getMock() {
+        List<UserDto> itineraryItems = new ArrayList<>();
+        itineraryItems.add(
+                UserDto.builder()
+                        .name("Ruben")
+                        .surname("Edery")
+                        .build()
+        );
+        itineraryItems.add(
+                UserDto.builder()
+                        .name("Thibault")
+                        .surname("Bourgeois")
+                        .build()
+        );
+        return itineraryItems;
+    }
 
 }
