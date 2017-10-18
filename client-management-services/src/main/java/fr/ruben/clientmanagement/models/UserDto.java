@@ -8,7 +8,9 @@ import lombok.RequiredArgsConstructor;
  * @Author  EDERY RUBEN on 17/10/2017.
  */
 
-
+/**
+ * Define an userdto with a name and a surname
+ */
 @Data
 @Builder
 @RequiredArgsConstructor

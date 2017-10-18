@@ -14,7 +14,12 @@ import java.util.List;
 public class UserService implements IUserService {
 
     static List<UserDto> userDtos = new ArrayList<>();
-
+    
+    
+    /**
+     * With Override we redefine method in the interface
+     */
+    @Override
     public List<UserDto> mockUser() {
         userDtos.add(
                 UserDto.builder()
@@ -30,11 +35,12 @@ public class UserService implements IUserService {
         );
         return userDtos;
     }
-
+    
     public List<UserDto> getAllUserMock() {
         return mockUser();
     }
-
+    
+    @Override
     public List<UserDto> createUser(String name, String surname) {
 
         List<UserDto> userD = userDtos;
@@ -46,15 +52,18 @@ public class UserService implements IUserService {
         );
         return userD;
     }
-
+    
+    @Override
     public String updateUser(String name) {
         return "User is update";
     }
-
+    
+    @Override
     public String getOneUser(String name) {
         return name;
     }
-
+    
+    @Override
     public void deleteUser() {
         userDtos.remove(getOneUser("ruben"));
     }

@@ -25,7 +25,7 @@ public class AspectPerso {
     
     public void logAfter(JoinPoint joinPoint) {
         /**
-         *
+         *This method need to separate technical code and work code
          */
 
         /** Link where i find solution
@@ -38,8 +38,10 @@ public class AspectPerso {
         String className  = joinPoint.getSignature().getDeclaringTypeName();
         String methodName = joinPoint.getSignature().getName();
         String specifArgs = Arrays.toString(joinPoint.getArgs());
-
-        //This sentence is used to log httpMethod use, specific road, classname, methode name, spcific args in a methode
+	
+		/**
+		 *This sentence is used to log httpMethod use, specific road, classname, methode name, spcific args in a methode
+		 */
         logger.info("[" + className + "] [" + httpMethod + "] [" + specifRoad + "] [" + methodName + "] " + specifArgs );
     }
 

@@ -15,7 +15,13 @@ import java.util.List;
 @RestController
 @RequestMapping("/user")
 public class ControlerUserDto {
-
+	
+	
+	/**
+	 * This method use Rest controller to have a road.
+	 * With the road the client can navigate with URL
+	 *
+	 */
     private static Logger logger = Logger.getLogger(ControlerUserDto.class);
 
     @Autowired

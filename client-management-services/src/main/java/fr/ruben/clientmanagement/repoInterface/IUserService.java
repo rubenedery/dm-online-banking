@@ -8,6 +8,8 @@ import java.util.List;
 /**
  * @Author EDERY RUBEN on 17/10/2017.
  */
+
+
 public interface IUserService {
 
     //This methode mock all user
