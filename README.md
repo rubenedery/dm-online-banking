@@ -20,3 +20,6 @@ models
 repoInterface
 service
 
+Diagramme a cette URL : 
+dm-online-bank/client-management-services/src/main/resources/img/component-diagram.png
+
