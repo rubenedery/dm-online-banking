@@ -21,5 +21,5 @@ repoInterface
 service
 
 Diagramme a cette URL : 
-dm-online-bank/client-management-services/src/main/resources/img/component-diagram.png
+![alt text](https://raw.githubusercontent.com/rubenedery/dm-online-banking/master/client-management-services/src/main/resources/img/component-diagram.png)
 
