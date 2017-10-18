@@ -10,13 +10,18 @@ import java.util.List;
  */
 public interface IUserService {
 
+    //This methode mock all user
     public List<UserDto> mockUser();
 
+    //This method should create user
     public List<UserDto> createUser(String name, String surname);
 
+    //This method should update an user
     public String updateUser(String name);
 
+    //This methode should get one user
     public String getOneUser(String name);
-
+    
+    //This methode should delete users
     public void deleteUser();
 }

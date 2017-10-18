@@ -24,7 +24,7 @@ public class ControlerUserDto {
     @RequestMapping(value="/alluser", method= RequestMethod.GET)
     public List<UserDto> getAllUser() {
 
-        return userService.getAllUserMock();
+		return userService.getAllUserMock();
     }
 
     @RequestMapping(value="/oneuser", method= RequestMethod.GET)

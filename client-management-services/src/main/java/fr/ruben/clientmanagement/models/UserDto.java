@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 /**
- * @Author EDERY RUBEN on 17/10/2017.
+ * @Author  EDERY RUBEN on 17/10/2017.
  */
 
 
