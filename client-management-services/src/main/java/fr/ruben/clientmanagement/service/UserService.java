@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by RubenEdery on 17/10/2017.
+ * @Author EDERY RUBEN on 17/10/2017.
  */
 @Service
 public class UserService implements IUserService {
@@ -35,28 +35,27 @@ public class UserService implements IUserService {
         return mockUser();
     }
 
-    public List<UserDto> createUser(UserDto userDto) {
+    public List<UserDto> createUser(String name, String surname) {
 
         List<UserDto> userD = userDtos;
-
         userD.add(
                 UserDto.builder()
-                        .name("Tony")
-                        .surname("Montana")
+                        .name(name)
+                        .surname(surname)
                         .build()
         );
         return userD;
     }
 
-    public String updateUser(int numUser) {
-        return "update";
+    public String updateUser(String name) {
+        return "User is update";
     }
 
     public String getOneUser(String name) {
         return name;
     }
 
-    public String deleteUser(int numUser) {
-        return "DeleteOneUser";
+    public void deleteUser() {
+        userDtos.remove(getOneUser("ruben"));
     }
 }

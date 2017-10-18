@@ -6,17 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by RubenEdery on 17/10/2017.
+ * @Author EDERY RUBEN on 17/10/2017.
  */
 public interface IUserService {
 
     public List<UserDto> mockUser();
 
-    public List<UserDto> createUser(UserDto userDto);
+    public List<UserDto> createUser(String name, String surname);
 
-    public String updateUser(int numUser);
+    public String updateUser(String name);
 
     public String getOneUser(String name);
 
-    public String deleteUser(int numUser);
+    public void deleteUser();
 }

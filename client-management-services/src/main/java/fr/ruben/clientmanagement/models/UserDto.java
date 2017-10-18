@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 /**
- * Created by RubenEdery on 17/10/2017.
+ * @Author EDERY RUBEN on 17/10/2017.
  */
 
 
@@ -15,4 +15,9 @@ import lombok.RequiredArgsConstructor;
 public class UserDto {
     private String name;
     private String surname;
+
+    public UserDto (String name,String surname){
+        this.name=name;
+        this.surname=surname;
+    }
 }
